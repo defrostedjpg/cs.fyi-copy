@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --background: #171717; /* background */
+  --text: #ffffff; /* text color */
+  --default-font: 18px; /* base font size */
+}
+
+.idk-what-to-name-this {
+  display: block;
+  min-height: 100vh; /* min-h-screen */
+  padding-bottom: 10px; /* pb-10 */
+  padding-top: 10px; /* pt-1 */
+}
+@media (min-width: 640px) {
+  .idk-what-to-name-this {
+    padding-bottom: 32px; /* sm:pb-32 */
+  }
+}
+
+.header {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+@media (min-width: 576px) {
+  .header {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+#header {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+@media (min-width: 576px) {
+  #header {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+.wrap {
+  background-color: #171717; /* #202225 is the equivalent of Tailwind's neutral-900 color */
+  display: block;
+  min-height: 100vh; /* vh represents viewport height */
+  padding-bottom: 10px;
+  padding-top: 1px;
+}
+@media (min-width:640px) {
+  .wrap {
+    padding-bottom: 32px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left !important;
+  max-width: 750px !important;
+  padding: 1rem;
+  margin: auto;
+}
+
+.title {
+  font-size: 8rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left !important;
+  max-width: 750px !important;
+  padding: 1rem;
+  margin: auto;
+}
+
+
+.title-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1.25rem auto;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .title-div {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  }
+}
+
+.title,
+.description {
+  text-align: left;
+}
+
+.description {
+  margin: 0;
+}
