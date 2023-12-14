@@ -18,7 +18,6 @@ body {
 }
 
 .idk-what-to-name-this {
-  display: block;
   min-height: 100vh; /* min-h-screen */
   padding-bottom: 10px; /* pb-10 */
   padding-top: 10px; /* pt-1 */
@@ -35,17 +34,6 @@ body {
 }
 @media (min-width: 576px) {
   .header {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-}
-
-#header {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-@media (min-width: 576px) {
-  #header {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
@@ -118,5 +106,55 @@ body {
 }
 
 .description {
+  color: #a3a3a3;
   margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+#header {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+@media (min-width: 576px) {
+  #header {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 750px !important;
+  padding: 0 1rem;
+}
+
+#flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#idk {
+  font-weight: 400;
+  text-decoration: none;
+  font-size: var(--default-font);
+  color: #a3a3a3;
+}
+
+#idk:hover {
+  color: white;
+}
+
+#home-explore {
+  display: flex;
+  font-size: var(--default-font);
+  gap: 5px;
+  text-decoration: none;
+  gap: 1.25rem;
+}
+@media (min-width: 640px) {
+  #home-explore {
+    font-size: var(--default-font);
+  }
 }
